@@ -49,15 +49,13 @@ regenerative-braking-thesis/
 ├── model/                         the Simulink/Simscape model + DDPG pipeline
 │   ├── Beautiful_powertrain.slx        EV drivetrain + RL-agent model
 │   ├── build_or_load_agent_01.m        builds the DDPG actor/critic agent
-│   ├── Train_1.m / train_quick_*.m     training scripts
-│   ├── evaluate_general.m / eval_run_03.m   evaluation & logging
-│   ├── ev_init.m / setup_project_00.m  vehicle/battery init & project setup
-│   └── actionMap.m / utils_rl.m / …     helpers
+│   ├── Train_1.m                       agent training
+│   ├── evaluate_general.m              evaluation and logging
+│   ├── ev_init.m / setup_project_00.m  vehicle/battery init and project setup
+│   └── actionMap.m / utils_rl.m        helpers
 └── figures/
     └── braking_energies.png       RL agent vs rule-based energy recovery
 ```
 
-> **Note:** `model/` is the project's working research code (MATLAB / Simulink /
-> Simscape + Reinforcement Learning Toolbox), including some experimentation. NREL's
-> **ADVISOR** simulator was used as a modelling reference (not redistributed);
-> copyrighted reference books/papers are excluded.
+**Built with** MATLAB · Simulink · Simscape (Battery Builder) · Reinforcement
+Learning Toolbox (DDPG, `rlSimulinkEnv`).
