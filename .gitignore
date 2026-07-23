@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# MATLAB / Simulink
+*.asv
+*.autosave
+slprj/
+*.slxc
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Tooling caches
+.impeccable/
